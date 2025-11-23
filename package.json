@@ -1,0 +1,24 @@
+{
+  "name": "stock-master-ims",
+  "version": "1.0.0",
+  "description": "Modular Inventory Management System",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": ["inventory", "management", "stock"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.7",
+    "uuid": "^9.0.1",
+    "concurrently": "^8.2.2"
+  }
+}
